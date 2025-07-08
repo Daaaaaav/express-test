@@ -1,6 +1,5 @@
-// index.js
-import dotenv from "dotenv"; // <-- AKTIFKAN INI
-dotenv.config({ path: './.env' }); // <-- AKTIFKAN INI (WAJIB paling atas sebelum import lain)
+import dotenv from "dotenv";
+dotenv.config({ path: './.env' });
 
 import mongoose from "mongoose";
 import app from "./app.js"; 
