@@ -7,7 +7,7 @@ WTV is a modern blog website that lets users post content while others can view,
 ![WTV Screenshot](src/assets/preview.jpg)
 
 **Post Detail**
-![WTV Screenshot](src/assets/postdetail.png)
+![WTV Screenshot](src/assets/postdetail.jpg)
 
 ## Expanding the ESLint configuration
 ---
