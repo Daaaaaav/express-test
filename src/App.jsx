@@ -243,7 +243,7 @@ function AppCoreContent() {
             <Route path="/posts/:postId/comments" element={<CommentsPage />} />
             <Route path="/users/:userId" element={<UserPage />} />
             <Route path="/auth/login" element={<LoginPage />} />
-            <Route path="/auth/login/google/callback" element={<GoogleSuccess />} />
+            <Route path="/auth/callback" element={<GoogleSuccess />} />
             <Route path="/auth/signup" element={<SignupPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
