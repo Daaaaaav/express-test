@@ -6,9 +6,6 @@ WTV is a modern blog website that lets users post content while others can view,
 **Post List**
 ![WTV Screenshot](src/assets/preview.jpg)
 
-**Post Detail**
-![WTV Screenshot](src/assets/postdetail.jpg)
-
 ## Expanding the ESLint configuration
 ---
 
@@ -98,3 +95,48 @@ WTV is a modern blog website that lets users post content while others can view,
 | GET | /posts/:postId/comments | Get all comments on a post (supports `page`/`limit`) |
 | POST | /posts/:postId/comments | Add a comment to a post |
 | DELETE | /posts/:postId/comments/:commentId | Delete a comment by ID |
+
+--- 
+
+## 🧑‍💻 User Manual
+
+### Step-by-Step Usage Guide
+
+1. **Register an Account**
+   - If you do not have an account, register manually using your **email and password** via the **Sign Up** page,  
+     or sign up using your **Google account** for quick access.
+
+**Sign Up Form**
+![WTV Screenshot](src/assets/signup-form.jpg)
+
+**Sign Up with Googled**
+![WTV Screenshot](src/assets/google.jpg)
+     
+
+2. **Login**
+   - Login using the **same email and password** you registered with,  
+     or continue with **Google login** to access your account.
+
+3. **View Blog Posts**
+   - Once logged in, you will see the **blog post list**.
+   - You can browse and read any post without restrictions.
+     
+![WTV Screenshot](src/assets/preview.jpg)
+
+4. **View Post Detail & Comments**
+   - Click on any post to open its **Post Detail** page.
+   - Here, you can **read the full post** and view **all existing comments**.
+   - All users, including **non-logged-in visitors**, can **add comments on each post** directly on the Post Detail page.
+     
+**Post Detail**
+![WTV Screenshot](src/assets/postdetail.jpg)
+
+
+5. **Create New Post**
+   - You **must be logged in** to create a new post.
+   - Navigate to **Create Post**, add your content, and publish to share with others.
+
+6. **Edit and Delete Posts**
+   - You can **edit or delete only your own posts**.
+   - For posts created by other users, you can view and comment but cannot edit or delete them.
+
