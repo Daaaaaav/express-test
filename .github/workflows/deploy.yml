@@ -32,8 +32,10 @@ jobs:
 
       - name: Test SSH port from runner
         run: |
-          sudo apt-get update && sudo apt-get install -y netcat
+          sudo apt-get update
+          sudo apt-get install -y netcat-openbsd
           nc -zv ${{ secrets.EC2_HOST }} 22
+
 
 
       - name: Code archive to EC2
