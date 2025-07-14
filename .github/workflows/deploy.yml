@@ -71,6 +71,15 @@ jobs:
             echo "AWS_BUCKET_NAME=${{ secrets.AWS_BUCKET_NAME }}" >> .env
             echo "AWS_REGION=${{ secrets.AWS_REGION }}" >> .env
 
+            if ! command -v node &> /dev/null; then
+              curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+              sudo apt-get install -y nodejs
+            fi
+
+            if ! command -v pm2 &> /dev/null; then
+              sudo npm install -g pm2
+            fi
+
             npm ci
             pm2 delete all || true
             pm2 start index.js --name WTV
