@@ -73,10 +73,5 @@ jobs:
 
             sudo apt install -y nodejs npm
             sudo npm ci
-            sudo npm i -g pm2
             pm2 delete all || true
-            pm2 start index.js --name express-test   
-
-            npm ci
-            pm2 delete all || true
-            pm2 start index.js --name WTV
+            pm2 start index.js --name WTV 
