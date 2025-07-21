@@ -1,3 +1,4 @@
+/* eslint-disable */
 // app.js
 import express from 'express';
 import postRouter from './routers/post.js';
@@ -6,10 +7,9 @@ import userRouter from './routers/user.js';
 import session from "express-session";
 import MongoStore from 'connect-mongo';
 import passport from './config/passport.js';
-// dotenv tidak perlu diimpor lagi di sini karena sudah di index.js
-// import dotenv from 'dotenv'; // Hapus ini jika diimpor di index.js
 
-// dotenv.config({ path: './.env' }); // Hapus ini jika sudah di index.js
+// import dotenv from 'dotenv';
+// dotenv.config({ path: './.env' });
 
 const app = express();
 
