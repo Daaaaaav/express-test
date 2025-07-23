@@ -4,7 +4,8 @@ dotenv.config({ path: './.env' });
 import mongoose from "mongoose";
 import app from "./app.js"; 
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/express-test')
+const mongoUrl = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/express-test'
+mongoose.connect(mongoUrl)
     .then(() => {
         console.log('Database connected successfully!');
         const PORT = 3000;
